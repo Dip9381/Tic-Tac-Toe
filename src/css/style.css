@@ -1,0 +1,78 @@
+body {
+  background-color: rgba(0, 0, 0, 0.871);
+}
+
+#title {
+  color: white;
+  font-weight: 600;
+  font-size: 5em;
+}
+
+#body {
+  background-color: rgb(227, 227, 227);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-top: 3%;
+  box-shadow: 3px 3px 10px 20px rgb(227, 227, 227);
+}
+
+#box {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+}
+#box > div {
+  display: flex;
+  height: 33.3%;
+}
+#box > div div {
+  width: 33%;
+  border: 1px solid rgba(0, 0, 0, 0.577);
+  cursor: pointer;
+}
+#box > div div:hover {
+  background-color: rgb(255, 240, 240);
+}
+
+#result {
+  display: none;
+}
+
+#reset {
+  background-color: rgb(71, 174, 247);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+#reset:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+#load::after {
+  content: "";
+  animation: loads 1s infinite;
+}
+
+@keyframes loads {
+  0% {
+    content: ".";
+  }
+  30% {
+    content: ". .";
+  }
+  60% {
+    content: ". . .";
+  }
+  90% {
+    content: ". . . . . .";
+  }
+}/*# sourceMappingURL=style.css.map */
